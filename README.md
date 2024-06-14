@@ -1,5 +1,7 @@
 # spring-boot-exit-problem
 
+(a reproducer for https://github.com/spring-projects/spring-boot/issues/41102)
+
 This small project shows a problem if
 
     System.exit(SpringApplication.exit(ctx, () -> 42));
