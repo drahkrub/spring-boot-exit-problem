@@ -19,7 +19,7 @@ There is only one java class: `ExitApplication`.
 In it's `@PostConstruct` method the URL http://localhost:8080 is called,
 and in the corresponding `@GetMapping` a shutdown is initiated by executing `System.exit(SpringApplication.exit(ctx, () -> 42));` - which means, that the app is stopped as soon as it is started.
 
-Unfortunately, the intended exit status 42 is not always returned, instead also 0 is returned sometimes.
+Unfortunately, the intended exit status `42` is not always returned, instead also `0` is returned sometimes.
 
 Since it can take some time until a different exit status appears, the shell script `startup.sh` starts the Spring Boot app over and over again.
 
