@@ -14,7 +14,7 @@ is executed within a controller method.
 
 ### Explanation
 
-There is only one java class: `ExitApplication`.
+There is only one java class: [ExitApplication](src/main/java/de/idon/exit/ExitApplication.java).
 
 In it's `@PostConstruct` method the URL http://localhost:8080 is called,
 and in the corresponding `@GetMapping` a shutdown is initiated by executing `System.exit(SpringApplication.exit(ctx, () -> 42));` - which means, that the app is stopped as soon as it is started.
